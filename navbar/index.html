@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Navbar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="logo-content">
+                <div class="logo">
+                    <i class='bx bx-code-alt'></i>
+                    <div class="logo-name">EACIS</div>
+                </div>
+                <i class='bx bx-menu' id="btn"></i>
+            </div>
+
+            <ul class="nav-list">
+                <li>
+                        <i class='bx bx-search-alt-2'></i>
+                        <input type="text" placeholder="search">
+                    <span class="tooltip">Search</span>
+                </li>
+
+                <li>
+                    <a href="">
+                        <i class='bx bx-grid-alt' ></i>
+                        <span class="links-name">Dashboard</span>
+                    </a>
+                    <span class="tooltip">Dashboard</span>
+                </li>
+
+                <li>
+                    <a href="">
+                        <i class='bx bx-user'></i>
+                        <span class="links-name">User</span>
+                    </a>
+                    <span class="tooltip">User</span>
+                </li>
+
+                <li>
+                    <a href="">
+                        <i class='bx bx-message'></i>
+                        <span class="links-name">Messages</span>
+                    </a>
+                    <span class="tooltip">Messages</span>
+                </li>
+
+                <li>
+                    <a href="">
+                        <i class='bx bx-pie-chart-alt-2'></i>
+                        <span class="links-name">Analytics</span>
+                    </a>
+                    <span class="tooltip">Analytics</span>
+                </li>
+
+                <li>
+                    <a href="">
+                        <i class='bx bx-folder'></i>
+                        <span class="links-name">File Manager</span>
+                    </a>
+                    <span class="tooltip">File Manager</span>
+                </li>
+
+                <li>
+                    <a href="">
+                        <i class='bx bx-cart'></i>
+                        <span class="links-name">Order</span>
+                    </a>
+                    <span class="tooltip">Order</span>
+                </li>
+
+                <li>
+                    <a href="">
+                        <i class='bx bx-heart'></i>
+                        <span class="links-name">Saved</span>
+                    </a>
+                    <span class="tooltip">Saved</span>
+                </li>
+
+                <li>
+                    <a href="">
+                        <i class='bx bxs-cog' ></i>
+                        <span class="links-name">Settings</span>
+                    </a>
+                    <span class="tooltip">Settings</span>
+                </li>
+            </ul>
+
+            <div class="profile-content">
+                <div class="profile">
+                    <div class="profile-details">
+                        <img src="img/pfp.jpg" alt="profile-pic">
+                        <div class="name-job">
+                            <div class="name">Isuru Senaratne</div>
+                            <div class="job">Web Developer</div>
+                        </div>
+                    </div>
+                    <i class='bx bx-log-out' id="log-out"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-content">
+            <div class="text">Home Content</div>
+        
+        <script >
+            let btn = document.querySelector("#btn");
+            let sidebar = document.querySelector(".sidebar");
+            let searchbar = document.querySelector(".bx-search-alt-2")
+
+            btn.onclick = function() {
+                sidebar.classList.toggle("active");
+            }
+
+            searchbar.onclick = function() {
+                sidebar.classList.toggle("active");
+            }
+        </script>
+    </body>
+</html>
